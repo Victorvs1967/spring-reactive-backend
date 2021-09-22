@@ -3,6 +3,7 @@ package com.vvs.springreactivebackend.controller;
 import java.security.Principal;
 
 import com.vvs.springreactivebackend.entity.dto.UserDto;
+import com.vvs.springreactivebackend.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

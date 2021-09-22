@@ -2,11 +2,13 @@ package com.vvs.springreactivebackend.service;
 
 import com.vvs.springreactivebackend.entity.dto.ResponseDto;
 import com.vvs.springreactivebackend.entity.dto.UserDto;
+import com.vvs.springreactivebackend.entity.mapper.UserMapper;
+import com.vvs.springreactivebackend.errors.exception.UserAlreadyExistException;
+import com.vvs.springreactivebackend.errors.exception.WronCredentialException;
 import com.vvs.springreactivebackend.repository.UserRepository;
 import com.vvs.springreactivebackend.security.JWTUtil;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 

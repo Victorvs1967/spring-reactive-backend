@@ -1,6 +1,8 @@
 package com.vvs.springreactivebackend.service;
 
 import com.vvs.springreactivebackend.entity.dto.UserDto;
+import com.vvs.springreactivebackend.entity.mapper.UserMapper;
+import com.vvs.springreactivebackend.errors.exception.UserNotFoundException;
 import com.vvs.springreactivebackend.repository.UserRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
