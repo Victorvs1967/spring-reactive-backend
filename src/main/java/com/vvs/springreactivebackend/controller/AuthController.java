@@ -26,7 +26,7 @@ public class AuthController {
     return authService.signup(userDto);
   }
 
-  @GetMapping("vi/login")
+  @GetMapping("v1/login")
   public Mono<ResponseDto> signup(@RequestHeader("email") String email, @RequestHeader("password") String password) {
     return authService.login(email, password);
   }
